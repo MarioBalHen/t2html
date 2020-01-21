@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        *{ 
+            margin: 0px; 
+            padding:0px; 
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
+            background-color: #425067;
+        }
+        .contenedorPrincipal{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header{
+            background-color:darksalmon;
+            overflow: hidden;
+            width: 100%;
+        }
+        header nav ul li{
+            list-style: none;
+            float: left;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            padding: 15px 20px 15px 20px;
+            display: inline-block;
+            color: black;
+        }
+        header nav ul li a:hover{
+            text-decoration: none;
+            padding: 15px 20px 15px 20px;
+            display: inline-block;
+            background-color:darkseagreen;
+            color: white;
+        }
+        main{
+            width: 70%;
+            background-color: white;
+            float: left;
+        }
+        main img{
+            max-width: 100%;
+        }
+
+        main section{
+            padding: 30px;
+        }
+        main section p{
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+       main h1{
+           margin-bottom: 20px;
+       }
+       aside{
+           width: 30%;
+           float: left;
+           background-color:darkcyan;
+           padding: 30px;
+       }
+       aside h4{
+           color: white;
+           font-size: 20px;
+           margin-bottom: 20px;
+       }
+       aside ul li a{
+            text-decoration: none;
+            color: white;
+       }
+       aside ul li a:hover{
+            color:darkorange;
+       }
+       aside ul li{
+           border-bottom: 1px solid white;
+           list-style: none;
+           margin-bottom: 16px;
+       }
+       footer{
+           width: 70%;
+           background-color: #e52f6e;
+           padding:60px;
+           clear: both;
+       }
+       footer p{
+           color: white;
+           text-align: center
+       }
+       @media screen and (max-width: 800px){
+           main{
+               width: 100%;
+               display:block;
+           }
+           aside{
+               width: 100%;
+               display: block;
+           }
+           footer{
+               width: 100%;
+               display: block;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div clas=contenedorPrincipal>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img src="./img/img.jpg" alt="imagen">
+            <section>
+                <h1>Tílulo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quasi quo. Veritatis sit corrupti, placeat iusto hic repellat eaque voluptatibus consectetur repudiandae aut id itaque ullam quos sunt dolores? Voluptatum!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ex itaque, iste dolorem, enim, repudiandae rem ratione atque sequi odio hic inventore tenetur. Nobis tenetur, sint in quia eaque molestiae.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum eius harum voluptatem vero provident nam, nulla assumenda unde est, nesciunt nobis quam molestias reprehenderit, incidunt molestiae? Doloribus, cum aliquid.</p>
+            </section>
+        </main>
+        <aside>
+            <h4>Título</h4>
+                <ul>
+                    <li><a href="#">Entrada 1</a></li>
+                    <li><a href="#">Entrada 2</a></li>
+                    <li><a href="#">Entrada 3</a></li>
+                    <li><a href="#">Entrada 4</a></li>
+                </ul>
+            </aside>
+            <footer>
+                <p>Nombre 2019</p>
+            </footer>
+    </div>
+</body>
+</html>
